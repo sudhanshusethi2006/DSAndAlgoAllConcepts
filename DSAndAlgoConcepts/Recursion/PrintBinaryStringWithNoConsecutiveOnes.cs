@@ -2,10 +2,10 @@
 {
     internal class PrintBinaryStringWithNoConsecutiveOnes
     {
-        static void Main(string[] args)
-        {
-            Print(3, 0, "");
-        }
+        //static void Main(string[] args)
+        //{
+        //    Print(3, 0, "");
+        //}
 
         static void Print(int n, int lastPlace, string s)
         {
