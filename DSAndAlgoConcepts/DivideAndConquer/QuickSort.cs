@@ -2,10 +2,10 @@
 {
     internal class QuickSortAlgo
     {
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
 
-        }
+        //}
 
         static void QuickSort(int[] arr, int start, int end)
         {

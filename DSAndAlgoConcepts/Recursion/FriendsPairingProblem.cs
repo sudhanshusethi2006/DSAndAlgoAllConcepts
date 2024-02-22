@@ -15,10 +15,8 @@
         {
             if (n == 1 || n == 2) return n;
 
-            int Singlechoice = FriendPairing(n - 1);
-
-            int Pairchoices = (n - 1) * FriendPairing(n - 2);
-
+            var Singlechoice = FriendPairing(n - 1);
+            var Pairchoices = n - 1 * FriendPairing(n - 2);
             int total = Singlechoice + Pairchoices;
             return total;
 

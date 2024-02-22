@@ -2,12 +2,12 @@
 {
     internal class MergeSortAlgo
     {
-        static void Main(string[] args)
-        {
-            var arr = new int[] { 6, 3, 9, 5, 2, 8 };
-            MergeSort(arr, 0, arr.Length - 1);
+        //static void Main(string[] args)
+        //{
+        //    var arr = new int[] { 6, 3, 9, 5, 2, 8 };
+        //    MergeSort(arr, 0, arr.Length - 1);
 
-        }
+        //}
 
         public static void MergeSort(int[] arr, int left, int right)
         {
