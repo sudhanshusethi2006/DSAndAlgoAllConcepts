@@ -11,9 +11,11 @@
                 this.data = data;
                 next = null;
             }
+
+
         }
 
-        static Node head;
+        public static Node head;
         static Node tail;
         static int size = 1;
 
@@ -119,10 +121,126 @@
         }
 
 
+
+        // 3 variable 4 steps
         public void Reverse()
         {
 
+            Node first = null;
+            var second = tail = head;
+            Node third;
+
+            while (second != null)
+            {
+                third = second.next;
+                second.next = first;
+                first = second;
+                second = third;
+            }
+
+            head = first;
         }
+
+        public void RemoveNthNodeFromEnd(int n)
+        {
+            int size = 0;
+            Node temp = head;
+            while (temp != null)
+            {
+                size++;
+                temp = temp.next;
+            }
+
+            if (size == 1)
+                head = head.next;
+
+            int i = 1;
+            Node prev = head;
+            while (i < size - n)
+            {
+                prev = prev.next;
+                i++;
+            }
+
+            prev.next = prev.next.next;
+
+        }
+
+        // 1 -->2-->2-->1  true
+        public bool checkIfLinkedListIsPalindrome_usingAnotherDataStructure()
+        {
+            List<int> arr = new List<int>();
+
+            Node temp = head;
+            while (temp != null)
+            {
+
+                temp = temp.next;
+                arr.Add(temp.data);
+            }
+
+            arr.Reverse();
+
+            Node temp2 = head;
+
+            int i = 0;
+            while (temp2 != null)
+            {
+                if (arr[0] != temp2.data)
+                    return false;
+                i++;
+                temp2 = temp2.next;
+            }
+            return false;
+
+
+        }
+
+        public bool checkIfLinkedListIsPalindrome()
+        {
+            if (head == null || head.next == null) return true;
+
+
+            // get the middle of the linkedList
+            // slow and fast appraoch 
+
+            Node slow = head;      // slow is the mid here 
+            Node fast = head;
+
+            while (fast != null && fast.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+
+            // Reverse the 2 nd half 
+
+            Node prev = null;
+            Node current = slow;
+            Node nextNode;
+            while (current != null)
+            {
+                nextNode = current.next;
+                current.next = prev;
+                prev = current;
+                current = nextNode;
+            }
+
+            Node right = prev;
+            Node left = head;
+
+            while (right != null)
+            {
+                if (right.data != left.data)
+                    return false;
+                left = left.next;
+                right = right.next;
+            }
+
+            return true;
+
+        }
+
 
         public void Print()
         {
@@ -135,23 +253,27 @@
             }
         }
 
-        static void Main(string[] args)
-        {
-            LinkedListClass ll = new LinkedListClass();
-            ll.AddFirst(1);
-            ll.AddFirst(2);
-            ll.AddFirst(3);
-            ll.AddLast(4);
-            ll.AddLast(5);
-            ll.AddLast(6);
-            ll.AddAtIndex(4, 7);
-            ll.Print();
-            ll.RemoveFirst();
-            ll.RemoveLast();
-            ll.Print();
+        //static void Main(string[] args)
+        //{
+        //    LinkedListClass ll = new LinkedListClass();
+        //    ll.AddFirst(1);
+        //    ll.AddFirst(2);
+        //    ll.AddFirst(3);
+        //    ll.AddLast(4);
+        //    ll.AddLast(5);
+        //    ll.AddLast(6);
+        //    ll.AddAtIndex(4, 7);
+        //    ll.Print();
+        //    ll.RemoveFirst();
+        //    ll.RemoveLast();
+        //    ll.Print();
 
-            var found = ll.RecursiveSearch(head, 7);
-        }
+        //    var found = ll.RecursiveSearch(head, 7);
+
+        //    ll.Reverse();
+
+        //    //  var isPalindrome = ll.checkIfLinkedListIsPalindrome();
+        //}
 
 
 

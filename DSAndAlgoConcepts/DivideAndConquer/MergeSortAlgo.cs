@@ -4,7 +4,7 @@
     {
         //static void Main(string[] args)
         //{
-        //    var arr = new int[] { 6, 3, 9, 5, 2, 8 };
+        //    var arr = new int[] { 70, 90, 10, 50, 40, 20, 30, 80 };
         //    MergeSort(arr, 0, arr.Length - 1);
 
         //}
