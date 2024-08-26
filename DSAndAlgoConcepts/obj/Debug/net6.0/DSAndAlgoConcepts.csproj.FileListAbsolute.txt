@@ -3,7 +3,6 @@ C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\bin\Deb
 C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\bin\Debug\net6.0\DSAndAlgoConcepts.runtimeconfig.json
 C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\bin\Debug\net6.0\DSAndAlgoConcepts.dll
 C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\bin\Debug\net6.0\DSAndAlgoConcepts.pdb
-C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\obj\Debug\net6.0\DSAndAlgoConcepts.csproj.AssemblyReference.cache
 C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\obj\Debug\net6.0\DSAndAlgoConcepts.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\obj\Debug\net6.0\DSAndAlgoConcepts.AssemblyInfoInputs.cache
 C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\obj\Debug\net6.0\DSAndAlgoConcepts.AssemblyInfo.cs
@@ -13,3 +12,4 @@ C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\obj\Deb
 C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\obj\Debug\net6.0\DSAndAlgoConcepts.pdb
 C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\obj\Debug\net6.0\DSAndAlgoConcepts.genruntimeconfig.cache
 C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\obj\Debug\net6.0\ref\DSAndAlgoConcepts.dll
+C:\Users\0B7150649\source\OtherRepos\DSAndAlgoConcepts\DSAndAlgoConcepts\obj\Debug\net6.0\DSAndAlgoConcepts.sourcelink.json

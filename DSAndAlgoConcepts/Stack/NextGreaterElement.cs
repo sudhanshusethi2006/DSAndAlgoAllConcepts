@@ -9,13 +9,13 @@ namespace DSAndAlgoConcepts.Stack
 {
     internal class NextGreaterElement
     {
-        static void Main(string[] args)
-        {
-            int[] arr = new int[] { 6, 8, 0, 1, 3 };
-            int[] arrCopy = arr.Select(c => c).ToArray();
-            var res = NaiveApproach(arr);
-            var res2 = NextGreaterElementOptimized(arr);
-        }
+        //static void Main(string[] args)
+        //{
+        //    int[] arr = new int[] { 6, 8, 0, 1, 3 };
+        //    int[] arrCopy = arr.Select(c => c).ToArray();
+        //    var res = NaiveApproach(arr);
+        //    var res2 = NextGreaterElementOptimized(arr);
+        //}
 
         static int[] NaiveApproach(int[] arr)
         {
