@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAndAlgoConcepts.ArrayLists
+namespace DSAndAlgoConcepts.ArrayList
 {
     internal class ContainerWithMostWater
     {
